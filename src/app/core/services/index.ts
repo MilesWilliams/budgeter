@@ -1,9 +1,9 @@
 import { BaseApiService } from "./base.service";
-import { AuthService } from './auth.service';
+import { AuthenticationService } from './auth.service';
 
 
 // Add all your services here
-export const services: any[] = [BaseApiService, AuthService];
+export const services: any[] = [BaseApiService, AuthenticationService];
 
 export { BaseApiService } from './base.service';
-export { AuthService } from './auth.service';
+export { AuthenticationService } from './auth.service';
