@@ -2,7 +2,6 @@ import * as fromActions from '../actions/auth.actions';
 
 import { User } from '../../interfaces';
 
-
 export interface IAuthenticationState {
 	authenticated: boolean;
 	authenticating: boolean;

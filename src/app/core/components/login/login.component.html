@@ -1,0 +1,30 @@
+<section>
+  <div class="close-btn">
+    <i (click)="onClose()">x</i>
+  </div>
+  <div class="form-wrapper">
+    <bg-input-element 
+    [focusInput]="'true'"
+    [formGroup]="loginForm.controls.email_address"
+    formControl="email_address"
+    [label]="'Email'"
+    placeholder="Enter your email"
+    [autocomplete]="'on'"
+    name="email_address"
+    ></bg-input-element>
+
+    <bg-input-element 
+    [focusInput]="'false'"
+    [formGroup]="loginForm.controls.password"
+    formControl="password"
+    [label]="'Password'"
+    placeholder="Enter your password"
+    [autocomplete]="'on'"
+    name="password"
+    ></bg-input-element>
+    
+    <bg-button-element>
+      Login
+    </bg-button-element>
+  </div>
+</section>

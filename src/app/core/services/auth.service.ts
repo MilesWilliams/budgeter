@@ -36,7 +36,6 @@ export class AuthenticationService extends BaseApiService {
  * @memberof AuthenticationService
  */
     public authenticateUser(authDetails: { username: string, password: string }): Observable<User> {
-        // return this._http.get<User>(this.Url(), {params: authDetails, responseType: "json"});
         return this._http.get<User>('./assets/dummy-data/user.json', { responseType: "json" });
     }
 

@@ -33,7 +33,7 @@ export class AuthInterceptor implements HttpInterceptor {
             map((event: HttpEvent<any>) => {
                 
                 if (event instanceof HttpResponse) {
-                    // do anything here with valid responses.
+                    // handle valid responses here.
                 }
                 return event;
             }),
@@ -47,7 +47,6 @@ export class AuthInterceptor implements HttpInterceptor {
                     reason: error && error.error.response ? error.error.response: '',
                     status: error.status
                 };
-                // this.errorDialogService.openDialog(data);
                 return throwError(error);
             }));
     }

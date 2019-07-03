@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FeaturesRoutingModule } from './features-routing.module';
-import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SharedModule } from '../shared/shared.module';
+import { FeaturesComponent } from './features.component';
 
 @NgModule({
-  declarations: [LoginComponent, HomeComponent],
+  declarations: [HomeComponent, FeaturesComponent],
   imports: [
     CommonModule,
-    FeaturesRoutingModule
+    FeaturesRoutingModule,
+    SharedModule
   ]
 })
 export class FeaturesModule { }
